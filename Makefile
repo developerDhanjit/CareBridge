@@ -1,5 +1,8 @@
 setup:
 	pip install -r requirements.txt
 
+test:
+	mypy --ignore-missing-imports run.py config.py app/
+
 run:
-	mypy app.py && flask run --debug
+	 flask run --debug

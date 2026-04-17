@@ -1,30 +1,37 @@
-# Donation Platform
+# 💰 CareBridge — Donation Platform
 
-Python Version: **3.11+**
+> *Healthcare for everyone — online, offline, or in need*
 
-## Stack
+![Cover Image](cover.png)
 
-1. HTML
-2. Pico.css + CSS
-3. HTMX + JavaScript 
-4. Python
-5. Flask
-6. SQLite
+---
 
-## Run locally
+## 🎯 What This Repo Is
 
-1. Clone repo
-2. `python -m venv venv`
-3. `source venv/bin/activate` (or `venv\Scripts\activate` on Windows)
-4. Install modules: `make setup`
-5. Run: `make run`
-6. Open http://127.0.0.1:5000 🎉
+The **donation platform** for CareBridge — a full-stack web app connecting **patients in need**, **verified hospitals**, and **donors worldwide**.
 
-## TODOS
+Part of a two-part system:
+- 📡 **LoRaButton** — physical emergency button (no internet required)
+- 💰 **This repo** — donation platform (handles requests, verification, and payments)
 
-- [ ] Initialize the project
-- [ ] Finish README.md
-- [ ] Prototype website pages
-- [ ] Add a micro JS framework to speed up the development process
-- [ ] Finish all TODOS in templates
-- [ ] Finish all TODOS in routes
+---
+
+## ✨ Why This Stack?
+
+We chose **lightweight, no-build, production-ready** tools that work on **low-end devices** in low-income regions:
+
+| Layer | Technology | Why |
+| :--- | :--- | :--- |
+| **Frontend** | Alpine.js + HTMX + SASS | No build step. Ships as HTML. Fast on any device. |
+| **Backend** | Python + Flask + SQLite | Simple, lightweight, easy to iterate. |
+| **Deployment** | Anywhere (Render, Fly.io, PythonAnywhere, VPS) | No special requirements. |
+
+> 🧠 **No React. No Webpack. No Node_modules hell.** Just HTML that feels dynamic.
+
+---
+
+## 🚀 How It Works
+
+### Flow Overview
+
+**Patient → Hospital → Donation Request → Platform → Donor → Payment → Thank You**
