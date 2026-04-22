@@ -44,27 +44,35 @@
       <hr />
       <div class="grid">
         <select name="type" aria-label="type" required>
-          <option selected value="all">Type</option>
-          <option onclick="console.log('selected!')">Hospitals</option>
-          <option>Direct</option>
+          <option selected value="all">Type (All)</option>
+          <option value="hospital">Hospitals</option>
+          <option value="direct">Direct</option>
         </select>
         
         <select name="country" aria-label="Country" required>
-          <option selected value="all">Country</option>
-          <option>The Gambia</option>
-          <option>Nigeria</option>
-          <option>Niger</option>
-          <option>Somalia</option>
+          <option selected value="all">Country (All)</option>
+          <option value="the-gambia">The Gambia</option>
+          <option value="nigeria">Nigeria</option>
+          <option value="niger">Niger</option>
+          <option value="somalia">Somalia</option>
         </select>
       </div>
-      <fieldset>
-        <legend>Donation Amount:</legend>
-        <div class="grid">
-          <span>$1</span>
-          <span style="text-align: right;">$10k</span>
-        </div>
-        <input style="margin-top: 12px;" type="range" id="amount" name="amount" min="0" max="10000">
-      </fieldset>
+      <div class="grid">
+        <select name="priority" aria-label="priority" required>
+          <option selected value="all">Priority (All)</option>
+          <option value="very-high">VERY HIGH</option>
+          <option value="high">High</option>
+          <option value="medium">Medium</option>
+          <option value="flexible">Flexible</option>
+        </select>
+        
+        <select name="amount" aria-label="amount" required>
+          <option selected value="lowest">Lowest first $</option>
+          <option value="highest">Highest first $$$</option>
+        </select>
+      </div>
+      
+      
       
       <input type="submit" value="Filter" />
     </form>
