@@ -1,9 +1,27 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} {% block css %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/dashboards/main.css') }}"
+/>
+{% endblock %} {% block content %}
+<main>
+  <h1>Admin Dashboard</h1>
 
-{% block css %}
-<link rel="stylesheet" href="{{ url_for('static', filename='css/dashboards/main.css') }}">
-{% endblock %}
+  <div class="dashboard-cards">
+    <div class="card">
+      <h3>Total Users</h3>
+      <p>120</p>
+    </div>
 
-{% block content %}
-<!-- Yamin Code goes here inside <main>! -->
+    <div class="card">
+      <h3>Emergency Requests</h3>
+      <p>35</p>
+    </div>
+
+    <div class="card">
+      <h3>Active Donors</h3>
+      <p>58</p>
+    </div>
+  </div>
+</main>
 {% endblock %}

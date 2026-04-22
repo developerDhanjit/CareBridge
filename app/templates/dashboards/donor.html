@@ -1,11 +1,30 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} {% block css %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/dashboards/main.css') }}"
+/>
+{% endblock %} {% block content %}
+<main>
+  <h1>Donor Dashboard</h1>
 
-{% block css %}
-<link rel="stylesheet" href="{{ url_for('static', filename='css/dashboards/main.css') }}">
-{% endblock %}
+  <div class="dashboard-cards">
+    <div class="card">
+      <h3>Your Blood Group</h3>
+      <p>O+</p>
+    </div>
 
-{% block content %}
-<!-- Yamin Code goes here inside <main>! -->
-<h1>Salam Alaykoum Yamin!</h1>
+    <div class="card">
+      <h3>Donation Status</h3>
+      <p>Available</p>
+    </div>
+  </div>
 
+  <div class="requests">
+    <h2>Urgent Requests</h2>
+    <ul>
+      <li>Karachi - O+ needed</li>
+      <li>Lahore - A- needed</li>
+    </ul>
+  </div>
+</main>
 {% endblock %}
