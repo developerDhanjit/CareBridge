@@ -28,13 +28,15 @@ When the form is filled and Create Account button clicked, a message with these 
 4. address
 5. legal documents (verified by the government)
 6. date of establishment
-7. logo
+7. logo (image)
 8. website (or facebook profile page, x, instagram etc.. **must has followers, active or valid domain e.g. '.com' or '.org' etc..)
 9. phone number 
 10. Email
 11. Password
-12. number of workers
-13. number of monthly treated people (using documents not input number or est.)
+12. number of workers (doctors + workers)
+13. number of last month's treated people (using documents not input number or est.)
+14. 4 photos to upload (1: manager photo, 2: street photo, 3: entrance photo, hospital front  NO PATIENTS!)
+15. Location on Google Maps
 
 **Questions**
 
