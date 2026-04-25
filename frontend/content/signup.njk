@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 css:
-  - '/css/signup.css'
+  - '/css/auth-forms.css'
 ---
 <h1>Create a new account</h1>
 
@@ -13,17 +13,6 @@ css:
         type="text"
         name="fullname"
         placeholder="John Doe"
-        required
-        aria-required="true"
-      />
-    </label>
-    
-    <label>
-      Username
-      <input
-        type="text"
-        name="username"
-        placeholder="user123"
         required
         aria-required="true"
       />
@@ -42,6 +31,7 @@ css:
         placeholder="*******"
         required
         autocomplete="new-password"
+        aria-required="true"
       />
     </label>
 
@@ -53,7 +43,16 @@ css:
         placeholder="*******"
         required
         autocomplete="new-password"
+        aria-required="true"
       />
+    </label>
+    
+    <label for="type">
+      Account type
+      <select id="type" name='acount-type' required aria-required="true">
+        <option value='donor' selected>Donor</option>
+        <option value='normal'>Normal</option>
+      </select>
     </label>
 
     <label class="agree-label">

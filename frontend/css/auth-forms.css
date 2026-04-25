@@ -6,3 +6,9 @@ section {
   max-width: 850px;
   margin: 0 auto;
 }
+.agree-label {
+  margin-bottom: 30px;
+}
+.end-link {
+  display: block;
+}
